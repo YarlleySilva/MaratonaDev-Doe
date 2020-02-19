@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/e29454600e.js"></script>
  
@@ -27,7 +27,7 @@
 
   <section class="form hide">
     <h2>Entre na lista de doadores</h2>
-    <form action="/">
+    <form action="/" method="POST">
       <input type="text" name="name" placeholder="Nome completo">
 
       <input type="text" name="email" placeholder="Email">
@@ -43,25 +43,16 @@
 
     <section class="donors">
 
-      <div class="donor">
-        <div class="blood">AB+</div>
-        <p>Yarlley Silva</p>
-      </div>
+      {% for donor in donors %}
 
       <div class="donor">
-        <div class="blood">B+</div>
-        <p>Yarlley Silva</p>
+        <div class="blood">{{donor.blood}}</div>
+        <p>{{donor.name}}</p>
       </div>
 
-      <div class="donor">
-        <div class="blood">A+</div>
-        <p>Yarlley Silva</p>
-      </div>
+      {%endfor%}
 
-      <div class="donor">
-        <div class="blood">O+</div>
-        <p>Yarlley Silva</p>
-      </div>
+      
 
     </section>
   </main>
@@ -73,7 +64,7 @@
 
 
   <script src="https://kit.fontawesome.com/e29454600e.js"></script>
-  <script src="scripts.js"></script>
+  <script src="/scripts.js"></script>
 </body>
 
 
