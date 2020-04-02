@@ -15,7 +15,7 @@ O projeto consiste na construção de uma aplicação Web para cadastro de doado
 ### Tela Web/FrontEnd.
 
 <h1 align="center">
-    <img alt="DoeSangue" src="./src/assets/doesangue.png" />
+    <img alt="DoeSangue" src="./src/assets/doesangue.PNG" width="300px"/>
 </h1>
 
 
